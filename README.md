@@ -1,2 +1,2 @@
 # Campo-Dating-Website
-A dating website
+A dating website for campus students
