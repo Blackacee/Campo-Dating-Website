@@ -1,58 +1,116 @@
-                            * {
-                                margin: 0;
-                                padding: 0;
-                                box-sizing: border-box;
-                                font-family: 'poppins', sans-serif;
-                            }
-                            
-                            .campoheader {
-                                width: 100%;
-                                height: 100vh;
-                                background-image: url(/images/e9b4b107f662e031a1e3570adafa7d67.png);
-                                background-position: center;
-                                background-size: cover;
-                                color: #fff;
-                                padding: 0 7%;
-                                position: relative;
-                            }
-                            
-                            nav {
-                                width: 100%;
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
-                                padding: 10px 0 10px;
-                            }
-                            
-                            nav ul li {
-                                display: inline-block;
-                                list-style: none;
-                                margin: 30px 10px;
-                            }
-                            
-                            .logo {
-                                width: 80px;
-                                cursor: pointer;
-                            }
-                            
-                            nav ul li a {
-                                text-decoration: none;
-                                color: #fff;
-                                font-size: 20px;
-                                letter-spacing: 1px;
-                            }
-                            
-                            nav ul li a:hover {
-                                color: orange;
-                            }
-                            
-                            .text {
-                                margin-top: 25%;
-                                font-size: 22px;
-                            }
-                            
-                            .text h2 {
-                                font-size: 50px;
-                                font-weight: 600;
-                                line-height: 100px;
-                            }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.campoheader {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/e9b4b107f662e031a1e3570adafa7d67.png);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    padding: 0 7%;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 30px 10px;
+}
+
+.logo {
+    width: 80px;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+.text {
+    margin-top: 25%;
+    font-size: 22px;
+}
+
+.text h2 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 100px;
+    margin-bottom: 10px;
+}
+
+
+/* styling the button */
+
+.text .btn {
+    outline: none;
+    border: none;
+    font-size: 16px;
+    background: #ff3e3b;
+    color: #fff;
+    padding: 14px 40px;
+    cursor: pointer;
+}
+
+
+/* styling the download icon section */
+
+.download {
+    position: absolute;
+    right: 7%;
+    bottom: 65px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 40px;
+    transition: background 0.3s;
+}
+
+
+/* styling the icon image/logo */
+
+.download img {
+    width: 20px;
+    margin-left: 3px;
+    animation: move 2s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+
+/* creation of hover effect for the download */
+
+.download:hover {
+    background: #ff3e3b;
+}
